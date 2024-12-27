@@ -16,7 +16,7 @@ const port = process.env.PORT || 5000;
 // Setup database tables (async function)
 const setupDatabase = async (pool) => {
   try {
-    // await pool.query(queries.createTables); // Execute the SQL query to create tables
+    await pool.query(queries.createTables); // Execute the SQL query to create tables
     console.log("Database tables created successfully!");
   } catch (err) {
     console.error("Error creating database tables:", err.message);
