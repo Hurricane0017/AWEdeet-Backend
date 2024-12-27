@@ -9,6 +9,7 @@ const config = {
   database: process.env.DB_DATABASE, // Database name
   port: process.env.DB_PORT || 5432, // Default PostgreSQL port
   ssl: process.env.DB_TRUST_CERT === 'true' ? { rejectUnauthorized: false } : false, // Enable SSL if specified
+  family: 4, // Force IPv4
 };
 
 // Function to create a connection pool (async)
