@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json()); // Enable JSON parsing for incoming requests
 
 // Port setup
-const port = process.env.PORT || 5000;
+const port = 5003;
 
 // Setup database tables (async function)
 const setupDatabase = async (pool) => {
